@@ -35,7 +35,7 @@ var styles = StyleSheet.create({
     marginTop: 10,
     backgroundColor: '#FFFFFF',
     borderWidth: 2,
-    borderColor: '#999999',
+    borderColor: '#505050',
     justifyContent: 'center',
     alignItems: 'center',
     marginLeft: 10,

@@ -12,6 +12,7 @@ import ModalWarning from '../../../components/common/ModalWarning/modalWarning';
 import ModalSession from '../../../components/common/ModalWarning/modalSession';
 import API from '../../../API/ApiComm';
 import styles from './styles';
+import commonStyles from '../../commonStyles';
 import userDefaults from '../../../userDefaults.js';
 
 import Mapbox, { MapView } from 'react-native-mapbox-gl';
@@ -159,9 +160,9 @@ export default class sidewalkDetail extends Component {
     return (
       <View style={styles.container}>
         <SpinnerCustom visible={this.state.visible}/>
-        <Header title='Información de vereda o cruce' popParams={popParams}/>
+        <Header title=/*Información de */'Vereda o cruce' popParams={popParams}/>
         <ScrollView>
-        <View style={styles.contentContainer}>
+        {/*<View style={styles.contentContainer}>
           <View style={[styles.md1]}>
             <Image
             source={{uri: this.state.image}}
@@ -200,21 +201,45 @@ export default class sidewalkDetail extends Component {
             <Text style={styles.textButton}>Eliminar</Text>
           </TouchableOpacity>
         </View>
-        }
+      } */}
 
-        <View style={{height: 1, backgroundColor: "#64606C", marginTop: 20}}></View>
+      <Text style={[commonStyles.text, commonStyles.titleText, {marginTop: 10, alignSelf: 'center'}]}>{this.state.name}</Text>
+      <View style={styles.contentContainer}>
+        <Image
+        source={{uri: this.state.image}}
+        style={[commonStyles.image]}
+        resizeMode={'center'}
+        />
+      </View>
 
-          <View style={{alignItems: 'center', marginTop: 10}}>
-            <TouchableOpacity style={styles.buttonShow} onPress={() => this._seeComments()}>
-              <Text style={styles.textButton}>Ver votos y comentarios</Text>
-            </TouchableOpacity>
-          </View>
+      <View style={commonStyles.contentContainer}>
+        <Text style={[commonStyles.text, {fontWeight:'bold'}]}>Descripción:</Text>
+        <Text style={[commonStyles.text]}>{this.state.description}</Text>
+        <Text style={[commonStyles.text, {fontWeight:'bold'}]}>Creado por:</Text>
+        <Text style={[commonStyles.text]}>{this.state.creator}</Text>
+      </View>
 
-          <View style={{alignItems: 'center', marginTop: 10, marginBottom: 20}}>
-            <TouchableOpacity style={styles.buttonShow} onPress={() => this._seeEvaluations()}>
-              <Text style={styles.textButton}>Ver evaluaciones realizadas</Text>
-            </TouchableOpacity>
-          </View>
+      { this.state.permissions_u &&
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity style={styles.buttonActivity} onPress={() => Actions.AddBuild({ isEditing: true })}>
+            <Text style={commonStyles.buttonText}>Editar</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonActivity} onPress={() => this._didTapDeleteBuild()}>
+            <Text style={commonStyles.buttonText}>Eliminar</Text>
+          </TouchableOpacity>
+        </View>
+      }
+
+        <View style={{height: 1, backgroundColor: "#505050"}}></View>
+
+        <View style={{ marginTop: 10, flexDirection:'row', alignSelf: 'center'}}>
+          <TouchableOpacity style={commonStyles.buttonShow} onPress={() => this._seeComments()}>
+            <Text style={commonStyles.buttonText}>Votos y comentarios</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={commonStyles.buttonShow} onPress={() => this._seeEvaluations()}>
+            <Text style={commonStyles.buttonText}>Evaluaciones</Text>
+          </TouchableOpacity>
+        </View>
 
           <View style={styles.mapView}>
             <MapView

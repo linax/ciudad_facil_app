@@ -6,6 +6,7 @@ import { Actions } from 'react-native-router-flux';
 
 import Modal from 'react-native-simple-modal';
 import styles from './styles';
+import commonStyles from '../../../screens/commonStyles';
 
 var image = 'build_1';
 
@@ -98,23 +99,22 @@ export default class ModalDetail extends Component {
             <Modal
                offset={this.state.offset}
                open={this.state.open}
-               //modalDidClose={() => this.modalBehavior()}
                modalStyle={styles.modalStyle}
                >
                <View>
-                  <View style={styles.headerModal}>
-                    <Image source={{uri : this.props.annotation.image}} style={styles.icon}/>
-                    <Text style={{color: '#000000', fontSize: 18, fontWeight: 'bold', padding: 5, textAlign: 'center'}}>{this.props.annotation.name}</Text>
-                    <Text style={{color: '#000000', fontSize: 16}}>{this._getType(this.props.annotation.type)}</Text>
-                  </View>
+								 <View style={[styles.headerModal]}>
+									 <Image source={{uri : this.props.annotation.image}} style={styles.icon}/>
+									 <Text style={[commonStyles.text, commonStyles.titleText, {padding: 10, textAlign: 'center'}]}>{this.props.annotation.name}</Text>
+									 <Text style={commonStyles.text}>{this._getType(this.props.annotation.type)}</Text>
+								 </View>
 
                   <View style={styles.contentModal}>
-                      <Text style={styles.textDescription}>Acceso: <Text style={{fontWeight: 'normal'}}>{this.props.annotation.evp_eva && this._getCalification(this.props.annotation.evp_eva.esp_acc)}</Text></Text>
-                      <Text style={styles.textDescription}>Circulación: <Text style={{fontWeight: 'normal'}}>{this.props.annotation.evp_eva && this._getCalification(this.props.annotation.evp_eva.esp_des)}</Text></Text>
-                      <Text style={styles.textDescription}>Uso: <Text style={{fontWeight: 'normal'}}>{this.props.annotation.evp_eva && this._getCalification(this.props.annotation.evp_eva.esp_uso)}</Text></Text>
-                      <Text style={styles.textDescription}>Información: <Text style={{fontWeight: 'normal'}}>{this.props.annotation.evp_eva && this._getCalification(this.props.annotation.evp_eva.esp_inf)}</Text></Text>
+                      <Text style={[commonStyles.text, styles.textDescription]}>Acceso: <Text style={[commonStyles.text, {fontWeight: 'normal'}]}>{this.props.annotation.evp_eva && this._getCalification(this.props.annotation.evp_eva.esp_acc)}</Text></Text>
+                      <Text style={[commonStyles.text, styles.textDescription]}>Circulación: <Text style={[commonStyles.text, {fontWeight: 'normal'}]}>{this.props.annotation.evp_eva && this._getCalification(this.props.annotation.evp_eva.esp_des)}</Text></Text>
+                      <Text style={[commonStyles.text, styles.textDescription]}>Uso: <Text style={[commonStyles.text, {fontWeight: 'normal'}]}>{this.props.annotation.evp_eva && this._getCalification(this.props.annotation.evp_eva.esp_uso)}</Text></Text>
+                      <Text style={[commonStyles.text, styles.textDescription]}>Información: <Text style={[commonStyles.text, {fontWeight: 'normal'}]}>{this.props.annotation.evp_eva && this._getCalification(this.props.annotation.evp_eva.esp_inf)}</Text></Text>
                     <TouchableOpacity style={styles.moreInfo} onPress={() => this._moreInfo()}>
-                      <Text style={styles.textMoreInfo}>Ver más información</Text>
+                      <Text style={commonStyles.buttonText}>Ver más</Text>
                     </TouchableOpacity>
                   </View>
 

@@ -16,6 +16,7 @@ import ModalWarning from '../../components/common/ModalWarning/modalWarning';
 import ModalInfoPrivacy from '../../components/common/ModalInfo/modalPrivacyLogin';
 import userDefaults from '../../userDefaults.js';
 import styles from './styles';
+import commonStyles from '../commonStyles';
 
 var authUrl = 'http://ciudad-facil.perceptum.cl/login/facebook';
 

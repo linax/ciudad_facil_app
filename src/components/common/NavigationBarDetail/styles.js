@@ -17,7 +17,7 @@ var styles = StyleSheet.create({
     justifyContent: 'center'
   },
   textTitle: {
-    color: '#808080',
+    color: '#F0F0F0',
     fontSize: 14,
     fontWeight: '600',
     textAlign: 'center'

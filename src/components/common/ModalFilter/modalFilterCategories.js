@@ -13,6 +13,7 @@ import userDefaults from '../../../userDefaults.js';
 import API from '../../../API/ApiComm';
 
 import styles from './styles';
+import commonStyles from '../../../screens/commonStyles';
 import stylesCAT from './stylesCategories';
 
 export default class ModalFilterCategories extends Component  {
@@ -265,14 +266,14 @@ export default class ModalFilterCategories extends Component  {
       return (
         <View>
           <View style={stylesCAT.formGroup3}>
-            <Text style={stylesCAT.textForm}>Categoría:</Text>
+            <Text style={commonStyles.text}>Categoría:</Text>
             <View>
               <TextInput value={this.state.category} onFocus={this._showCategoriesPicker.bind(this)} placeholder="Seleccionar..." style={stylesCAT.picker}></TextInput>
             </View>
           </View>
 
           <View style={stylesCAT.formGroup3}>
-            <Text style={[stylesCAT.textForm]}>Sub-Categoría:</Text>
+            <Text style={[commonStyles.text, stylesCAT.textForm]}>Sub-Categoría:</Text>
             <View>
               <TextInput value={this.state.subCategory} editable={this.state.editable} onFocus={this._showSubCategoriesPicker.bind(this)} placeholder="Seleccionar..." style={stylesCAT.picker}></TextInput>
             </View>
@@ -304,7 +305,7 @@ export default class ModalFilterCategories extends Component  {
   _showCategoriesSidewalkPicker() {
 
     Keyboard.dismiss();
-    
+
     let data = ['Veredas', 'Cruces'];
 
     Picker.init({
@@ -376,7 +377,7 @@ export default class ModalFilterCategories extends Component  {
             <Text style={styles.title}><Icon name={this.props.icon} size={20} color="#FFFFFF"/> {this.props.title}</Text>
           </View>
                 <View style={{padding: 10}}>
-                  <Text style={{textAlign: 'center'}}>¿Buscas alguna categoría en particular?</Text>
+                  {/*<Text style={[commonStyles.text, {textAlign: 'center'}]}>¿Buscas alguna categoría en particular?</Text>*/}
                   {
                     this.renderShow()
                   }
@@ -384,10 +385,10 @@ export default class ModalFilterCategories extends Component  {
 
           <View>
             <TouchableOpacity style={styles.accept} disabled={this.state.disabled} onPress={() => this.didTapFilterCategories()}>
-              <Text style={this.state.disabled ? {color: '#939597'} : {color: '#999999', fontWeight: 'bold'}}>Filtrar</Text>
+              <Text style={this.state.disabled ? {color: '#A0A0A0'} : {color: '#505050', fontWeight: 'bold'}}>Filtrar</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.accept} onPress={() => this.didTapClose()}>
-              <Text style={{fontWeight: 'bold', color: '#999999'}}>Ver todos</Text>
+              <Text style={{fontWeight: 'bold', color: '#505050'}}>Ver todos</Text>
             </TouchableOpacity>
           </View>
       </Modal>

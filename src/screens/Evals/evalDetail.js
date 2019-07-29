@@ -10,6 +10,7 @@ import ModalWarning from '../../components/common/ModalWarning/modalWarning';
 import ModalReload from '../../components/common/ModalReload/modalReload';
 import Header from '../../components/common/Header/header';
 import styles from './styles2';
+import commonStyles from '../commonStyles'
 import API from '../../API/ApiComm';
 import userDefaults from '../../userDefaults.js';
 
@@ -38,7 +39,7 @@ export default class EvalDetail extends Component {
   renderEvaluations() {
     return global.vae.vae.map((data, i) => {
       return(
-          <Text key={i} style={styles.text}>{data.vie_dsc}</Text>
+          <Text key={i} style={[commonStyles.text, styles.text, {fontSize: 14}]}>{data.vie_dsc}</Text>
       )
     })
   }
@@ -46,18 +47,18 @@ export default class EvalDetail extends Component {
   	render() {
     	return (
       	<View style={styles.container}>
-      		<Header title='Detalle de Evaluación'/>
+      		<Header title='Detalle de evaluación'/>
 
       		<ScrollView>
       			<View style={styles.header}>
 		            <Image
 		            source={{uri: this.state.image}}
-		            style={[styles.image]}
+		            style={[commonStyles.image]}
 		            resizeMode={'contain'}
 		            />
-      				<Text style={{fontStyle: 'italic', marginBottom: 10}}>"{global.vae.eup_cmn}"</Text>
-      				<Text style={{marginBottom: 5}}>{global.vae.eup_created_at.substr(0,global.vae.eup_created_at.indexOf(' '))}</Text>
-      				<Text style={{fontWeight: 'bold'}}>{global.vae.usr_evl}</Text>
+      				<Text style={[commonStyles.text, {fontStyle: 'italic', marginBottom: 10}]}>"{global.vae.eup_cmn}"</Text>
+      				<Text style={[commonStyles.text, {fontSize: 14, marginBottom: 5}]}>{global.vae.eup_created_at.substr(0,global.vae.eup_created_at.indexOf(' '))}</Text>
+      				<Text style={[commonStyles.text, {fontWeight: 'bold'}]}>{global.vae.usr_evl}</Text>
       			</View>
 
       			<View style={styles.evals}>

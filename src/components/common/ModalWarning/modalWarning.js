@@ -8,6 +8,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Actions } from 'react-native-router-flux';
 
 import styles from './styles';
+import commonStyles from '../../../screens/commonStyles';
 
 export default class ModalAdd extends Component  {
 
@@ -42,13 +43,13 @@ export default class ModalAdd extends Component  {
           <View style={[styles.backgroundTitle, {backgroundColor: this.props.background}]}>
             <Text style={styles.title}><Icon name={this.props.icon} size={20} color="#FFFFFF"/> {this.props.title}</Text>
           </View>
-          <View style={styles.contentContainer}>
+          <View style={commonStyles.modalContainer}>
             <Text style={{textAlign: 'center'}}>{this.props.text}</Text>
           </View>
 
           <View>
-            <TouchableOpacity style={styles.accept} onPress={this.onPress.bind(this)}>
-              <Text style={{fontWeight: 'bold', color: '#999999'}}>Aceptar</Text>
+            <TouchableOpacity style={commonStyles.whiteButton} onPress={this.onPress.bind(this)}>
+              <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Aceptar</Text>
             </TouchableOpacity>
           </View>
       </Modal>

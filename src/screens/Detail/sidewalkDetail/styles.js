@@ -53,14 +53,14 @@ var styles = StyleSheet.create({
 		color: '#FFF',
 		fontWeight: 'bold'
 	},
-	buttonShow: {
+	/*buttonShow: {
 		width: width * 0.68,
 		height: height* 0.0725,
 		backgroundColor: '#3CC882',
 		alignItems: 'center',
 		padding: 5,
 		justifyContent: 'center'
-	},
+	},*/
 	mapView: {
     	width: width*0.8,
     	height: height*0.3,

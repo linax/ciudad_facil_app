@@ -10,6 +10,7 @@ import ModalWarning from '../../components/common/ModalWarning/modalWarning';
 import ModalReload from '../../components/common/ModalReload/modalReload';
 import Header from '../../components/common/Header/header';
 import styles from './styles';
+import commonStyles from '../commonStyles';
 import API from '../../API/ApiComm';
 import userDefaults from '../../userDefaults.js';
 
@@ -165,10 +166,10 @@ export default class Comments extends Component {
 		return(
 			<View style={{height: 60, marginTop: 10, marginBottom: 10}}>
 				<View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10}}>
-					<Text style={{fontWeight: 'bold'}}>Usuario: {rowData.com_usu}</Text>
-					<Text style={{fontSize: 14}}>{date}</Text>
+					<Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Usuario: {rowData.com_usu}</Text>
+					<Text style={[commonStyles.text, {fontSize: 14}]}>{date}</Text>
 				</View>
-				<Text style={{fontStyle: 'italic'}}>{rowData.com_cmn}</Text>
+				<Text style={[commonStyles.text, {fontStyle: 'italic'}]}>{rowData.com_cmn}</Text>
 			</View>
 		);
 	}
@@ -180,33 +181,33 @@ export default class Comments extends Component {
         	<Header title='Comentarios y votos'/>
 
         	<View style={styles.titleContainer}>
-        		<Text style={{fontWeight: 'bold', fontSize: 18}}>{this.state.title}</Text>
+        		<Text style={[commonStyles.text, commonStyles.titleText]}>{this.state.title}</Text>
         	</View>
 
         	<View style={styles.votes}>
-        		<Text style={{fontWeight: 'bold', fontSize: 16}}>Votos: </Text>
+        		<Text style={commonStyles.text}>Votos: </Text>
         		<TouchableOpacity onPress={() => this._makeVote(true)} style={styles.touchableVotes}>
-        			<Icon name="triangle-up" size={40} color="#2D2D2D" />
+        			<Icon name="triangle-up" size={40} color="#505050" />
         			<Text>{this.state.positive}</Text>
         		</TouchableOpacity>
         		<TouchableOpacity onPress={() => this._makeVote(false)} style={styles.touchableVotes}>
-        			<Icon name="triangle-down" size={40} color="#2D2D2D" />
+        			<Icon name="triangle-down" size={40} color="#505050" />
         			<Text>{this.state.negative}</Text>
         		</TouchableOpacity>
         	</View>
 
 
         	<ScrollView style={styles.comments}>
-        		<Text style={{fontWeight: 'bold', fontSize: 16}}>Comentarios: </Text>
+        		<Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Comentarios: </Text>
 
         		<ListView enableEmptySections={true} dataSource={this.state.dataSource} renderRow={this._renderCell.bind(this)} />
 
         		<View style={styles.CommentArea}>
-        			<Text>Agrega un comentario: </Text>
+        			<Text style={commonStyles.text}>Agrega un comentario: </Text>
 
-        			<View style={{borderColor:'#383838', borderWidth: 1, marginTop: 10}}><TextInput style={styles.textArea} underlineColorAndroid='transparent' maxLength={150} multiline={true} onChangeText={(val) => this.setState({comment: val}) }></TextInput></View>
+        			<View style={{borderColor:'#505050', borderWidth: 1}}><TextInput style={styles.textArea} underlineColorAndroid='transparent' maxLength={150} multiline={true} onChangeText={(val) => this.setState({comment: val}) }></TextInput></View>
         			<TouchableOpacity style={styles.add} onPress={() => this._makeComment()}>
-        				<Text style={{fontWeight: 'bold', color: '#FFFFFF'}}>Agregar Comentario</Text>
+        				<Text style={commonStyles.buttonText}>Agregar Comentario</Text>
         			</TouchableOpacity>
         		</View>
         	</ScrollView>

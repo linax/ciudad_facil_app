@@ -38,11 +38,14 @@ var styles = StyleSheet.create({
 	button: {
 	    borderRadius: 45,
 	    backgroundColor: '#FFFFFF',
-	    borderColor: '#979797',
-	    borderWidth: 5,
+	    borderColor: '#505050',
+	    borderWidth: 1,
 	    alignItems: 'center',
 	    justifyContent: 'center',
 	    marginBottom: 20
+	},
+	mapIcon: {
+		color: '#505050'
 	},
 	containerNotLoaded: {
 	    flex: 1,

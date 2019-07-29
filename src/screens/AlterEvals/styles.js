@@ -78,8 +78,7 @@ var styles = StyleSheet.create({
     marginTop: 10,
     backgroundColor: '#FFFFFF',
     borderColor: '#3CC882',
-    borderRadius: 10,
-    borderWidth: 4,
+    borderWidth: 2,
     marginBottom: 20,
     justifyContent: 'center',
     alignItems: 'center'

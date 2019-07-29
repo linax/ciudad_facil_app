@@ -27,10 +27,6 @@ var styles = StyleSheet.create({
     width: 160,
     alignItems: 'center'
   },
-  textEdit: {
-    color: '#FFFFFF',
-    fontWeight: 'bold'
-  },
   title: {
     marginTop: 10,
     marginBottom: 20

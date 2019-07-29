@@ -31,19 +31,24 @@ var styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#FFFFFF'
   },
-  textDescription: {
+  /*textDescription: {
     alignSelf: 'flex-start',
   	color: '#000000',
   	fontWeight:'bold',
   	fontSize: 16,
   	marginBottom: 5
-  },
+  },*/
   icon: {
     width: 60,
     height: 60,
     marginBottom: 5,
     overflow: 'visible'
-  }
+  },
+  textDescription: {
+    alignSelf: 'flex-start',
+  	fontWeight:'bold',
+  	marginBottom: 5
+  },
 });
 
 module.exports = styles;

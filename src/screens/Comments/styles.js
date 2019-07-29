@@ -20,8 +20,8 @@ var styles = StyleSheet.create({
 	votes: {
 		flexDirection: 'row',
 		alignItems: 'center',
-		width: width*0.4,
-		marginLeft: width*0.3,
+		width: width * 0.4,
+		marginLeft: width * 0.3,
 		justifyContent: 'center'
 	},
 	touchableVotes: {

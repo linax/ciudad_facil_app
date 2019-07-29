@@ -12,6 +12,7 @@ import ModalWarning from '../../components/common/ModalWarning/modalWarning';
 import ModalReload from '../../components/common/ModalReload/modalReload';
 import Header from '../../components/common/Header/header';
 import styles from './styles';
+import commonStyles from '../commonStyles';
 import SIStyles from './selectImageStyles.js';
 import FOStyles from '../AddMarker/AddSidewalk/formStyles.js';
 import API from '../../API/ApiComm';
@@ -48,8 +49,8 @@ export default class EvalDetail extends Component {
     _setValue(value, index) {
     var realIndex = Math.floor(index)
     var newUpdate = this.state.update.slice(0)
-    newUpdate[realIndex] = value 
-    
+    newUpdate[realIndex] = value
+
     this.setState({
       update: newUpdate
     })

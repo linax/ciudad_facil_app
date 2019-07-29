@@ -9,7 +9,8 @@ var width = Dimensions.get('window').width;
 var styles = StyleSheet.create({
   statusBarStyle: {
     height: 20,
-    backgroundColor: '#3CC882'
+    backgroundColor: '#3CC882',
+    color: '#FFFFFF'
   },
   viewStyle: {
     backgroundColor: '#3CC882',
@@ -31,7 +32,7 @@ var styles = StyleSheet.create({
   },
   textTitle: {
     color: '#FFFFFF',
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center'
   }

@@ -28,7 +28,7 @@ var styles = StyleSheet.create({
   },
   textTitle: {
     color: '#FFFFFF',
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center'
   }

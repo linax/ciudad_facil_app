@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_1cbb10bbeb6f21b4306faa2a33fbf77bae7dbbf6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_ce1c7ff5c129c18c86e99944c8076e93ec1cdad7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.3.1/99ce730034c6f5aaed710d1e0e9df95e8714ed5f/logging-interceptor-3.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="99ce730034c6f5aaed710d1e0e9df95e8714ed5f">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/logging-interceptor-3.3.1_bb1afd7a977f43bfdb82dcc55c3e9328ac35dc6c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_f108a7a895cb45bedfd7f21c6e641eb9b3e92679.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-image-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="185debb713f05e6ae262b4167d7645dce64ca4cb">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-image-picker-unspecified_9e1ba8612c08d09e04d01ba00e3cef2d2891e6fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-android-permissions/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="92de0a64bcc7c81013c0a55751a68389e1484105">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-android-permissions-unspecified_f90134fa1b2dcfbae62b437f4e8d4eefa0eed93e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_c9b380e0abe1e40d23bca02cfd39b179d2bfc6ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-java-services/1.3.1/6bda5f2cf57af827c1a9703a77ed9e451e6d6d25/mapbox-java-services-1.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6bda5f2cf57af827c1a9703a77ed9e451e6d6d25">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/mapbox-java-services-1.3.1_1508d9b89ee52b3a3a3dacdcd195aa21a9496b04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_e197205c15bab5c6f16c01608b011555d293d041.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/gson-2.7_6e9676d59d65d276fbdf31e1c03d03e2c136b84d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-background-timer/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="38020375c4dd574413acaf21f00a4173e72b3998">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-background-timer-unspecified_a5885da9a11e21b261b5de5e1a9e2d84025bfd68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-0.11.0_1f7a39eb2ccda436b9e80e0665ee8f5da4c9c474.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-0.11.0_7ca32abc8048a664e14634162ee93dbdef651f07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-mapbox-gl/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9b80f9306d32a8df4e270567d0701afd41c29d01">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-mapbox-gl-unspecified_cd130f7b2e376c8c2d13ee6b21a10cf455bb5237.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_bc9d0a490f59459087ef295a41af6360ebb8d26e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_fba733e58edd68eca738d8672a2b7d56d669a046.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6d9ed9a288364688e7fcf6704776284dac1eb42e">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-8.3.0_c55e61d67d2de264caa9abe2a95a76ce9aa64748.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_6aa7d0eaddaae7df9c441d4333a6ce262a94f2f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.mapzen.android/lost/1.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c9d0d2b21baebf49c526d857991e2d48f30fcb00">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.mapzen.android-lost-1.1.1_715a0ae254f2448b2586c17d863d6ac53b7462ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="77f9593d979f4347344be233bd0d888315f79517">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-8.3.0_548104b36e5a22f2eb8b1ef61a1cd5431f6dd60d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1137942adeb03984c1311b662363dd38fc238fd3">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-0.11.0_0ba7d790a4beec106327e1940231ad345e4f9fcf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1137942adeb03984c1311b662363dd38fc238fd3">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-0.11.0_0ba7d790a4beec106327e1940231ad345e4f9fcf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_712d765cac4b6ac138aaf861a919b3af7edf52b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_3b31094b66229409e7ed76ad763c5546bc672d48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_34773a19808bd0459f8b94e02d78fd26be8bc9b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="345a1b5cf5b144ce18ba6962bc66a7e2f26c1c1b">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.3.0_894d0b57d34a53ae59a09806d44e0ca3c0839160.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_06d6f9c4834bae0e5158ecfc890e1950633951b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="01a90bbb9495a8bbf6f3cfdf12f1b35caaa9524b">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.3.0_a99b52647e1f8fa5ff74a2b4b3c586f02ef5d83f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b49a04a3016689b372ecbb77f0c33e486e768cca">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.41.2_1de0a893dd62ea69d68d68e94379637c2605dcf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_f7a2c50835dc3a812b05d086e0cb32097f245b9a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/4.2.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c77ef83420db92b311d7f6ea0240a5e000b20d82">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.mapbox.mapboxsdk-mapbox-android-sdk-4.2.2_a5851fc0ac77953d0c8e1e21101009108232daa0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_34773a19808bd0459f8b94e02d78fd26be8bc9b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_f7a2c50835dc3a812b05d086e0cb32097f245b9a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_f1ea7669306239c8b18cbf360d47c90d94fdbe11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b49a04a3016689b372ecbb77f0c33e486e768cca">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.41.2_1de0a893dd62ea69d68d68e94379637c2605dcf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_f108a7a895cb45bedfd7f21c6e641eb9b3e92679.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.4.0_570ca618c1899c780f0a466fb60431b358093c14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="01a90bbb9495a8bbf6f3cfdf12f1b35caaa9524b">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.3.0_a99b52647e1f8fa5ff74a2b4b3c586f02ef5d83f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_f1ea7669306239c8b18cbf360d47c90d94fdbe11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_712d765cac4b6ac138aaf861a919b3af7edf52b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-splash-screen/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="42a9c4bbafd1cb478e1a8f540fc3609c83745df8">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-splash-screen-unspecified_40e84e8b5827516acadc7fdce27629f97bf072e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-image-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="185debb713f05e6ae262b4167d7645dce64ca4cb">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-image-picker-unspecified_9e1ba8612c08d09e04d01ba00e3cef2d2891e6fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-0.11.0_7ca32abc8048a664e14634162ee93dbdef651f07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_bc9d0a490f59459087ef295a41af6360ebb8d26e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b4a018be27860c8e8212e1e3ab65ef44f0797334">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-picker-unspecified_4b1d2659cb299bf9af6f9e50b887f93a1d590d2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_06d6f9c4834bae0e5158ecfc890e1950633951b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-0.11.0_1f7a39eb2ccda436b9e80e0665ee8f5da4c9c474.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6d9ed9a288364688e7fcf6704776284dac1eb42e">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-8.3.0_c55e61d67d2de264caa9abe2a95a76ce9aa64748.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/gson-2.7_6e9676d59d65d276fbdf31e1c03d03e2c136b84d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.4.0_570ca618c1899c780f0a466fb60431b358093c14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-splash-screen/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="42a9c4bbafd1cb478e1a8f540fc3609c83745df8">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-splash-screen-unspecified_40e84e8b5827516acadc7fdce27629f97bf072e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/4.2.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c77ef83420db92b311d7f6ea0240a5e000b20d82">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.mapbox.mapboxsdk-mapbox-android-sdk-4.2.2_a5851fc0ac77953d0c8e1e21101009108232daa0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.3.1/99ce730034c6f5aaed710d1e0e9df95e8714ed5f/logging-interceptor-3.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="99ce730034c6f5aaed710d1e0e9df95e8714ed5f">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/logging-interceptor-3.3.1_bb1afd7a977f43bfdb82dcc55c3e9328ac35dc6c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_1cbb10bbeb6f21b4306faa2a33fbf77bae7dbbf6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_6aa7d0eaddaae7df9c441d4333a6ce262a94f2f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_c9b380e0abe1e40d23bca02cfd39b179d2bfc6ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.mapzen.android/lost/1.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c9d0d2b21baebf49c526d857991e2d48f30fcb00">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.mapzen.android-lost-1.1.1_715a0ae254f2448b2586c17d863d6ac53b7462ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-android-permissions/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="92de0a64bcc7c81013c0a55751a68389e1484105">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-android-permissions-unspecified_f90134fa1b2dcfbae62b437f4e8d4eefa0eed93e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_ce1c7ff5c129c18c86e99944c8076e93ec1cdad7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_3b31094b66229409e7ed76ad763c5546bc672d48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-background-timer/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="38020375c4dd574413acaf21f00a4173e72b3998">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-background-timer-unspecified_a5885da9a11e21b261b5de5e1a9e2d84025bfd68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="77f9593d979f4347344be233bd0d888315f79517">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-8.3.0_548104b36e5a22f2eb8b1ef61a1cd5431f6dd60d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/library-2.4.0_f23388cd1a98cacd0319280b17684d5f687ae015.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_1829bf89670cf8efe671e303a1bba57566c3b194.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="345a1b5cf5b144ce18ba6962bc66a7e2f26c1c1b">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.3.0_894d0b57d34a53ae59a09806d44e0ca3c0839160.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-mapbox-gl/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9b80f9306d32a8df4e270567d0701afd41c29d01">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-mapbox-gl-unspecified_cd130f7b2e376c8c2d13ee6b21a10cf455bb5237.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_e197205c15bab5c6f16c01608b011555d293d041.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_297aeb285e2d9340882f7909aa96a08b6f79b4d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-0.11.0_f82a59fa0bf3ad70aaab988ca4b6c75926a6d601.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-0.11.0_f82a59fa0bf3ad70aaab988ca4b6c75926a6d601.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-google-location/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b3f1eb0037791baea5ad93f44110741efd3322ba">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-google-location-unspecified_d6731fc0fdf353dade3a5245001081035fe6c70c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_297aeb285e2d9340882f7909aa96a08b6f79b4d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_6be62b481bba3e61a8913933fc217d40faaf143b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/guava-18.0_6f5998aa6a94ac57704b0110a6d854a6951e6022.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b319ff9834bbeb9be394687614eb86892699ea14">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-vector-icons-unspecified_ea950ee138954a51ca5b419ddb432d33837ef6c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_741d735d427922676ef0fd5c011ab011b16d5210.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_fba733e58edd68eca738d8672a2b7d56d669a046.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3341b66c54367e777a0647e2db96c045329bfeab">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-0.11.0_12940d161f46cc99b007cf3716e73a8c1b07d6d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_1829bf89670cf8efe671e303a1bba57566c3b194.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3341b66c54367e777a0647e2db96c045329bfeab">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-0.11.0_12940d161f46cc99b007cf3716e73a8c1b07d6d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_8e9da7aa76fe1ba0c31f06c075679dad708b9dd5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b319ff9834bbeb9be394687614eb86892699ea14">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-vector-icons-unspecified_ea950ee138954a51ca5b419ddb432d33837ef6c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/library-2.4.0_f23388cd1a98cacd0319280b17684d5f687ae015.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b4a018be27860c8e8212e1e3ab65ef44f0797334">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-picker-unspecified_4b1d2659cb299bf9af6f9e50b887f93a1d590d2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_a626541c65158da3ae3259ce8268a8c1b4a3e89a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-0.11.0_97b7d5db9062cb1fdea706e01c7a800f7fb88bdb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_741d735d427922676ef0fd5c011ab011b16d5210.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-java-services/1.3.1/6bda5f2cf57af827c1a9703a77ed9e451e6d6d25/mapbox-java-services-1.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6bda5f2cf57af827c1a9703a77ed9e451e6d6d25">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/mapbox-java-services-1.3.1_1508d9b89ee52b3a3a3dacdcd195aa21a9496b04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/CiudadFacilApp/react-native-google-location/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b3f1eb0037791baea5ad93f44110741efd3322ba">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/CiudadFacilApp-react-native-google-location-unspecified_d6731fc0fdf353dade3a5245001081035fe6c70c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/guava-18.0_6f5998aa6a94ac57704b0110a6d854a6951e6022.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_6be62b481bba3e61a8913933fc217d40faaf143b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-0.11.0_97b7d5db9062cb1fdea706e01c7a800f7fb88bdb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_8e9da7aa76fe1ba0c31f06c075679dad708b9dd5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/sergiobustamante/Projects/app_ciudad_facil_perceptum/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_a626541c65158da3ae3259ce8268a8c1b4a3e89a.jar" />
+    </item>
+
+</items>

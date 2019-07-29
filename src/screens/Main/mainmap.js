@@ -1,12 +1,15 @@
 'use strict';
 
+const permission = require('react-native-permissions');
+
 import React, { Component } from 'react';
-import { View, Dimensions, TouchableOpacity, AsyncStorage, ActivityIndicator, Text, Alert, NetInfo } from 'react-native';
+import { View, Dimensions, TouchableOpacity, AsyncStorage, ActivityIndicator, Text, Alert, NetInfo, PermissionsAndroid, Permissions, Platform, DeviceEventEmitter } from 'react-native';
 
 import Mapbox, { MapView } from 'react-native-mapbox-gl';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import SpinnerCustom from '../../components/common/Spinner/spinner';
 import { Actions, ActionConst } from 'react-native-router-flux';
+import RNGLocation from 'react-native-google-location';
 
 import Header from '../../components/common/headerMain/headerMain';
 import ModalDetail from '../../components/common/ModalDetail/modalDetail';
@@ -31,180 +34,232 @@ global.buttonSize = 45;
 
 export default class MainMap extends Component {
 
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-    this.filtredDataByType = [];
-    this.filtredDataByAccess = [];
-    this.filtredDataByDistance = [];
+        this.filtredDataByType = [];
+        this.filtredDataByAccess = [];
+        this.filtredDataByDistance = [];
 
-    this.state = {
-      isLoaded: false,
-      zoom: 11,
-      annotations: [],
-      selectedAnnotation: [],
-      value: 0,
-      visible: false,
-      center: {
-        latitude: -39.8143284,
-        longitude: -73.2234442
-      },
-      showButtons: !global.visibilityMap,
-      errorMessage: 'Se ha producido un error'
-    };
-  }
+        this.locationMessage = {
+            'title': 'CiudadFácil requiere de los permisos de localización',
+            'message': 'Ciudad Fácil necesita conocer tu ubicación para' +
+                        'que puedas conocer los lugares cerca de ti.'
+        }
 
-  componentWillMount() {
-    AsyncStorage.getItem('visibility_map').then((keyValue) => {
-      global.visibilityMap = (keyValue == 'true');
-    });
-  }
-
-  componentDidMount() {
-    if(global.zoom != null) {
-      this.setState({ zoom: global.zoom });
-    } else {
-      this.setState({ zoom: 11 });
+        this.state = {
+            isLoaded: false,
+            zoom: 15,
+            annotations: [],
+            selectedAnnotation: [],
+            value: 0,
+            visible: false,
+            center: {
+                latitude: -39.8143284,
+                longitude: -73.2234442
+            },
+            showButtons: !global.visibilityMap,
+            errorMessage: 'Se ha producido un error',
+            locationPermission: false
+        };
     }
 
-    this._getPoints();
-
-    setTimeout(() => {
-        this._centerMap();
-    }, 2000);    
-    
-  }
-
-  componentWillUpdate(nextProps, nextStates) {
-    if (nextStates.showButtons == global.visibilityMap) {
-      this.updateButtonsConfig()
-    }
-  }
-
-  updateButtonsConfig() {
-    this.setState({
-      showButtons: !global.visibilityMap
-    });
-  }
-
-  _setImageOfIcon(type, evaluation) {
-    switch(type){
-      case 1:
-        //Estacionamientos
-        return 'car_blue';
-        break;
-      case 2:
-        //Edificaciones
-        return 'build_' + evaluation;
-        break;
-      case 3:
-        //Espacio público
-        return 'public_' + evaluation;
-        break;
-      case 4:
-        //V y C
-        return 'corner_' + evaluation;
-        break;
-      default:
-        return 'https://cldup.com/CnRLZem9k9.png';
-    }
-  }
-
-  onOpenAnnotation = (annotation) => {
-    var id = annotation.id;
-    for (var i = 0; i < (global.annotations).length; i++) {
-      if ((global.annotations[i]).evp_id == id ) {
-        var annotation = global.annotations[i];
+    onLocationChange (e: Event) {
+      if (Platform.OS === 'android') {
+        this.setState({
+            center: {
+                latitude: e.Latitude,
+                longitude: e.Longitude
+            }
+        });console.log(e);
+        global.userLatitude = e.Latitude;
+        global.userLongitude = e.Longitude;
       }
     }
 
-    var image = this._setImageOfIcon(annotation.evp_typ, annotation.evp_eva_fin);
-
-    this.setState({
-      selectedAnnotation: {
-        id: annotation.evp_id,
-        name: annotation.evp_nam,
-        type: annotation.evp_typ,
-        evp_eva: annotation.evp_eva,
-        final: annotation.evp_eva_fin,
-        image: image
-      }
-    });
-
-    if(annotation.evp_typ == 1 || annotation.evp_typ == 4) {
-      global.setReload += 1;
-      this.fii.modalBehavior();
-      }
-    else if(annotation.evp_typ == 3) {
-      global.setReload += 1;
-      this.fuu.modalBehavior();
-    } else {
-      global.setReload += 1;
-      this.foo.modalBehavior();
-    }
-  };
-
-  _changeZoom(zoom){
-    var actualZoom = this.state.zoom + zoom;
-    this.setState({
-      zoom: actualZoom
-    });
-    global.zoom = actualZoom + zoom;
-    this._map.setZoomLevel(actualZoom);
-  }
-
-  async _centerMap(){
-        try {
-            const granted = await PermissionsAndroid.request(
-                PermissionsAndroid.PERMISSIONS.CAMERA,
-                {
-                    'title': 'Cool Photo App Camera Permission',
-                    'message': 'Cool Photo App needs access to your camera ' +
-                           'so you can take awesome pictures.'
+    componentWillMount() {
+        if (Platform.OS === 'ios' || (Platform.OS === 'android' && Platform.Version < 23)) {
+            this.setState({ locationPermission: true });
+            if (Platform.OS === 'android' && Platform.Version < 23){
+                if (!this.evEmitter) {
+                    this.evEmitter = DeviceEventEmitter.addListener('updateLocation', this.onLocationChange.bind(this));
+                    RNGLocation.getLocation();
                 }
-            )
-            if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-                console.log("You can use the camera")
-                navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        this.setState({
-                            center: {
-                                latitude: position.coords.latitude,
-                                longitude: position.coords.longitude
-                            }
-                        });
-                        this._map.setCenterCoordinate(position.coords.latitude, position.coords.longitude);
-                    },
-                    (error) => this.setState({ error: error.message }),
-                    { 
-                        enableHighAccuracy: true, 
-                        timeout: 20000, 
-                        maximumAge: 60000 
-                    }
-                );
+            }
+        } else {
+            this.requestLocationPermission();
+        }
+        AsyncStorage.getItem('visibility_map').then((keyValue) => {
+            global.visibilityMap = (keyValue == 'true');
+        });
+    }
 
-                global.userLatitude = this.state.center.latitude;
-                global.userLongitude = this.state.center.longitude;
+    componentDidMount() {
+        if(global.zoom != null) {
+            this.setState({ zoom: global.zoom });
+        } else {
+            this.setState({ zoom: 1 });
+        }
+        this._getPoints();
+    }
+
+    componentWillUpdate(nextProps, nextStates) {
+        if (nextStates.showButtons == global.visibilityMap) {
+            this.updateButtonsConfig()
+        }
+    }
+
+    componentWillUnmount() {
+      if (Platform.OS === 'android') {
+        // Stop listening for Events
+        this.evEmitter.remove();
+      }
+    }
+
+    /**
+     * Solicita permisos en tiempo de ejecución para localización
+     *
+     * @return {boolean} los permisos fueron entregados o no.
+     */
+    async requestLocationPermission() {
+        try {
+            if (await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION, this.locationMessage) === PermissionsAndroid.RESULTS.GRANTED) {
+                this.setState({locationPermission: true});
+                if (Platform.OS === 'android') {
+                    if (!this.evEmitter) {
+                        this.evEmitter = DeviceEventEmitter.addListener('updateLocation', this.onLocationChange.bind(this));
+                        RNGLocation.getLocation();
+                    }
+                }
+                return true;
             } else {
-                console.log("Camera permission denied")
+                this.setState({locationPermission: false})
+                return false;
             }
         } catch (err) {
             console.warn(err)
+            throw err;
         }
-        
     }
 
-  _getPoints() {
-    this.setState({ visible: true })
-    API.getEvaluationPoints().then(json => {
-      json = json.data;
-      global.annotations = json;
-      this._setData(json);
-      this.setState({ visible: false })
-    }).catch(error => {
-      this.setState({ visible: false })
-    });
-  }
+    updateButtonsConfig() {
+        this.setState({
+            showButtons: !global.visibilityMap
+        });
+    }
+
+    /**
+     * Define nombre de imagen de acuerdo a parametros entregados
+     *
+     * @param {integer} type       tipo de lugar (estacionamiento, edificacion...)
+     * @param {string} evaluation  evlauacion (buena, mala...)
+     */
+    _setImageOfIcon(type, evaluation) {
+        switch(type){
+            case 1:
+                //Estacionamientos
+                return 'car_blue';
+                break;
+            case 2:
+                //Edificaciones
+                return 'build_' + evaluation;
+                break;
+            case 3:
+                //Espacio público
+                return 'public_' + evaluation;
+                break;
+            case 4:
+                //V y C
+                return 'corner_' + evaluation;
+                break;
+            default:
+                return 'https://cldup.com/CnRLZem9k9.png';
+        }
+    }
+
+    onOpenAnnotation = (annotation) => {
+        var id = annotation.id;
+        for (var i = 0; i < (global.annotations).length; i++) {
+            if ((global.annotations[i]).evp_id == id ) {
+                var annotation = global.annotations[i];
+            }
+        }
+
+        var image = this._setImageOfIcon(annotation.evp_typ, annotation.evp_eva_fin);
+
+        this.setState({
+            selectedAnnotation: {
+                id: annotation.evp_id,
+                name: annotation.evp_nam,
+                type: annotation.evp_typ,
+                evp_eva: annotation.evp_eva,
+                final: annotation.evp_eva_fin,
+                image: image
+            }
+        });
+
+        if(annotation.evp_typ == 1 || annotation.evp_typ == 4) {
+            global.setReload += 1;
+            this.fii.modalBehavior();
+        }
+        else if(annotation.evp_typ == 3) {
+            global.setReload += 1;
+            this.fuu.modalBehavior();
+        } else {
+            global.setReload += 1;
+            this.foo.modalBehavior();
+        }
+    };
+
+    _changeZoom(zoom){
+        var actualZoom = this.state.zoom + zoom;
+        this.setState({
+            zoom: actualZoom
+        });
+        global.zoom = actualZoom + zoom;
+        this._map.setZoomLevel(actualZoom);
+    }
+
+
+    _centerMap(){
+        if (Platform.OS === 'ios') {
+          navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    this.setState({
+                        center: {
+                            latitude: position.coords.latitude,
+                            longitude: position.coords.longitude
+                        }
+                    });
+                    this._map.setCenterCoordinate(position.coords.latitude, position.coords.longitude);
+                },
+                (error) => {
+                    this.setState({ error: error.message })
+                },
+                {
+                    enableHighAccuracy: true,
+                    timeout: 20000,
+                    maximumAge: 60000
+                }
+            );
+        } else if (this.state.locationPermission === true) { console.log('está en locationpermission true')
+            this._map.setCenterCoordinate(this.state.center.latitude, this.state.center.longitude);
+        }
+        global.userLatitude = this.state.center.latitude;
+        global.userLongitude = this.state.center.longitude;
+    }
+
+    _getPoints() {
+        this.setState({ visible: true })
+        API.getEvaluationPoints().then(json => {
+            json = json.data;
+            global.annotations = json;
+            this._setData(json);
+            this.setState({ visible: false })
+        }).catch(error => {
+            this.setState({ visible: false })
+        });
+    }
 
   _setData(json) {
       var annotationsArray = []
@@ -289,8 +344,6 @@ export default class MainMap extends Component {
 
     var j = (this.filtredDataByAccess).length;
     var k = (this.filtredDataByDistance).length;
-    console.log(j);
-    console.log(k);
     if ( j != 0 ) {
         var filtredData = [];
         var annotations = this.filtredDataByAccess;
@@ -525,7 +578,6 @@ export default class MainMap extends Component {
         this.setState({
           visible: false
       });
-      console.log(lat+" "+long);
       this._setData(filtredData);
     }, 500);
   }
@@ -536,7 +588,7 @@ export default class MainMap extends Component {
     var dLon = (lon2 - lon1) * Math.PI / 180;
     var a =
        0.5 - Math.cos(dLat)/2 +
-       Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+       Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
        (1 - Math.cos(dLon))/2;
 
     return R * 2 * Math.asin(Math.sqrt(a));
@@ -590,19 +642,20 @@ export default class MainMap extends Component {
           scrollEnabled={true}
           zoomEnabled={true}
           showsUserLocation={true}
-          styleURL={Mapbox.mapStyles.streets}
+          styleURL={Mapbox.mapStyles.basic}
           annotations={this.state.annotations}
           onOpenAnnotation={this.onOpenAnnotation}
           onLongPress={this.addMarker}
           annotationsPopUpEnabled={false}
           logoIsHidden={false}
+          userTrackingMode={Mapbox.userTrackingMode.follow}
         />
 
 
         { this.state.showButtons &&
         <View style={styles.box1}>
             <TouchableOpacity style={[styles.button, {width: 46}, {height: 46}]} underlayColor='rgba(151,151,151,0.9)' onPress={() => Actions.Help()}>
-              <Icon name="question" size={23} />
+              <Icon style={styles.mapIcon} name="question" size={23} />
             </TouchableOpacity>
         </View>
         }
@@ -610,13 +663,13 @@ export default class MainMap extends Component {
         { this.state.showButtons &&
         <View style={styles.box2}>
             <TouchableOpacity style={[styles.button, {width: 46}, {height: 46}]} underlayColor='rgba(151,151,151,0.9)' onPress={() => this._changeZoom(2)}>
-              <Icon name="plus" size={23} />
+              <Icon style={styles.mapIcon} name="plus" size={23} />
             </TouchableOpacity>
             <TouchableOpacity style={[styles.button, {width: 46}, {height: 46}]} underlayColor='rgba(151,151,151,0.9)' onPress={() => this._changeZoom(-2)}>
-              <Icon name="minus" size={23} />
+              <Icon style={styles.mapIcon} name="minus" size={23} />
             </TouchableOpacity>
             <TouchableOpacity style={[styles.button, {width: 46}, {height: 46}]} underlayColor='rgba(151,151,151,0.9)' onPress={() => this._centerMap()}>
-              <Icon name="crosshairs" size={23} />
+              <Icon style={styles.mapIcon} name="crosshairs" size={23} />
             </TouchableOpacity>
         </View>
         }

@@ -9,55 +9,55 @@ var width = Dimensions.get('window').width;
 var styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		height: height *0.9
+		height: height * 0.9
 	},
 	contentContainer: {
-		marginTop: 20,
-		marginLeft: width*0.1,
-		marginRight: width*0.1,
-		flexDirection: 'row',
+		//marginTop: 10,
+		//marginLeft: width * 0.1,
+		//marginRight: width * 0.1,
+		//marginBottom: 10,
+		padding: 20
+	},
+	/*commentContainer: {
+		/*marginLeft: width * 0.1,
+		marginRight: width * 0.1,
+		padding: 20
+	},*/
+	/*image: {
+		width: width * 0.8,
+		height: height * 0.2,
+		alignSelf: 'center',
+		marginTop: 10,
 		marginBottom: 10
 	},
-	commentContainer: {
-		marginLeft: width*0.1,
-		marginRight: width*0.1,
-	},
-	image: {
-		width: width * 0.3,
-		height: height* 0.2
-	},
-	md1: {
+	/*md1: {
 		width: width*0.45,
 		height: height*0.2
 	},
 	md2: {
 		width: width*0.35,
-	},
+	},*/
 	buttonContainer: {
-		marginLeft: width*0.1,
+		marginLeft: width * 0.1,
 		marginTop: 10,
-		marginRight: width*0.1,
+		marginRight: width * 0.1,
 		flexDirection: 'row',
-		justifyContent: 'space-between'
 	},
 	buttonActivity: {
-		width: width*0.25,
-		height: height*0.05,
+		width: width * 0.25,
+		height: height * 0.05,
 		backgroundColor: '#3CC882',
 		alignItems: 'center',
 		justifyContent: 'center'
 	},
-	textButton: {
-		color: '#FFF',
-		fontWeight: 'bold'
-	},
 	buttonShow: {
-		width: width * 0.6725,
-		height: height* 0.0725,
+		width: width * 0.4,
+		height: height * 0.0625,
 		backgroundColor: '#3CC882',
 		alignItems: 'center',
 		justifyContent: 'center',
-		padding: 5
+		padding: 5,
+		margin: 10
 	}
 });
 

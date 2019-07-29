@@ -27,15 +27,9 @@ var styles = StyleSheet.create({
     alignItems: 'center',
     width: width * 0.6
   },
-  textMoreInfo: {
-    fontWeight: 'bold',
-    color: '#FFFFFF'
-  },
   textDescription: {
     alignSelf: 'flex-start',
-  	color: '#000000',
   	fontWeight:'bold',
-  	fontSize: 16,
   	marginBottom: 5
   },
   icon: {

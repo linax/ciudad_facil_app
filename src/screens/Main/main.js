@@ -1,7 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react';
-import { View, StyleSheet, Dimensions, AsyncStorage } from 'react-native';
+import { View, StyleSheet, Dimensions, AsyncStorage, PermissionsAndroid } from 'react-native';
 import { Actions, ActionConst } from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -46,6 +46,10 @@ export default class Main extends Component {
     };
   }
 
+  componentWillMount(){
+    this.requestLocationPermission();
+  }
+
   componentWillUpdate(nextProps, nextState) {
   	if (nextProps.refreshAnnotations) {
   		this.mainMap._getPoints();
@@ -86,6 +90,25 @@ export default class Main extends Component {
 
   setStateFrag(frag) {
     this.setState(frag);
+  }
+
+  async requestLocationPermission() {
+    try {
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+        {
+          'title': 'Ciudad Fácil necesita de permisos de localización',
+          'message': 'De esta forma podrás ubicarte en el mapa '
+        }
+      )
+      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+        //console.log("You can use the camera")
+      } else {
+        //console.log("Camera permission denied")
+      }
+    } catch (err) {
+      console.warn(err)
+    }
   }
 
 	render() {

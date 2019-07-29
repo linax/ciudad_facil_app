@@ -1,4 +1,13 @@
 {
-  "name": "CiudadFacilApp",
-  "displayName": "Ciudad Fácil"
+  "name":"CiudadFacilApp",
+  "displayName": "Ciudad Fácil",
+  "version": "1.0",
+  "slug": "ciudad-facil",
+  "sdkVersion": "25.0.0",
+  "ios": {
+    "bundleIdentifier": "com.ciudadfacil"
+  },
+  "android": {
+    "package": "com.ciudadfacil"
+  }
 }

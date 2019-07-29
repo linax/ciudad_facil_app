@@ -11,6 +11,7 @@ import ModalDropdown from 'react-native-modal-dropdown';
 import Header from '../../../components/common/Header/header';
 import config from '../../../userDefaults.js';
 import styles from './styles';
+import commonStyles from '../../commonStyles';
 import Picker from 'react-native-picker';
 
 
@@ -119,26 +120,26 @@ class Configure extends Component {
 							 <CheckBox
 							     style={{flex: 1, borderColor:'#7F7F7F'}}
 							     leftText="No mostrar botones de zoom:"
-							     leftTextStyle={styles.textConfig}
+							     leftTextStyle={[styles.textConfig, commonStyles.text]}
 							     onClick={() => this._showZoom()}
 							     isChecked={this.state.show}
-							     checkedImage={<Icon name="check-square" size={35} color="#000000" />}
-							     unCheckedImage={<Icon name="square-o" size={35} color="#000000" />}
+							     checkedImage={<Icon name="check-square" size={25} color="#606060" />}
+							     unCheckedImage={<Icon name="square-o" size={25} color="#606060" />}
 							  />
 						</View>
 
 						<View style={styles.actualization}>
-							<Text style={styles.textConfig}>Actualizar mapa cada:</Text>
+							<Text style={[styles.textConfig, commonStyles.text]}>Actualizar mapa cada:</Text>
 							<TextInput value={this.state.reload/60000 + ' mins'} onFocus={this._showPickerRefresh.bind(this)} style={styles.picker}></TextInput>
 						</View>
 
 						<View style={styles.actualization}>
-							<Text style={styles.textConfig}>Tamaño de botones en mapa:</Text>
+							<Text style={[styles.textConfig, commonStyles.text]}>Tamaño de botones en mapa:</Text>
 							<TextInput value={this._getTextOfZoom()} onFocus={this._showPickerZoom.bind(this)} style={styles.picker}></TextInput>
 						</View>
 
 				        <TouchableHighlight style={styles.containerButton} onPress={() => this._saveConfiguration()}>
-				          <View><Text style={styles.text}>Guardar Cambios</Text></View>
+				          <View><Text style={commonStyles.buttonText}>Guardar Cambios</Text></View>
 				      </TouchableHighlight>
 					</View>
 				</ScrollView>

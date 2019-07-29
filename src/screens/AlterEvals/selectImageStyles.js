@@ -13,7 +13,7 @@ var SIStyles = StyleSheet.create({
   },
   containerPhoto: {
     width: width * 0.6,
-    height: height*0.2,
+    height: height * 0.2,
     alignItems: 'center'
   },
   image: {
@@ -35,12 +35,11 @@ var SIStyles = StyleSheet.create({
     marginBottom: 10,
   },
   contentInput: {
-    borderWidth: 1.5,
-    borderColor: '#b1b2ba',
-    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#505050',
     flexDirection: 'row',
     alignItems: 'center',
-    paddingLeft:5,
+    paddingLeft: 5,
     paddingRight: 5
   },
   textArea: {

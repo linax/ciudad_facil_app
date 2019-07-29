@@ -6,6 +6,7 @@ import { Actions } from 'react-native-router-flux';
 
 import Modal from 'react-native-simple-modal';
 import styles from './styles';
+import commonStyles from '../../../screens/commonStyles';
 
 var image = 'build_1';
 
@@ -95,19 +96,18 @@ export default class ModalParkingDetail extends Component {
             <Modal
                offset={this.state.offset}
                open={this.state.open}
-               //modalDidClose={() => this.modalBehavior()}
                modalStyle={styles.modalStyle}
                >
                <View>
                   <View style={styles.headerModal}>
                     <Image source={{uri : this.props.annotation.image}} style={styles.icon}/>
-                    <Text style={{color: '#000000', fontSize: 18, fontWeight: 'bold', padding: 5, textAlign: 'center'}}>{this.props.annotation.name}</Text>
-                    <Text style={{color: '#000000', fontSize: 16}}>{this._getType(this.props.annotation.type)}</Text>
+                    <Text style={[commonStyles.text, commonStyles.titleText, {padding: 10, textAlign: 'center'}]}>{this.props.annotation.name}</Text>
+                    <Text style={commonStyles.text}>{this._getType(this.props.annotation.type)}</Text>
                   </View>
 
                   <View style={styles.contentModal}>
                     <TouchableOpacity style={styles.moreInfo} onPress={() => this._moreInfo()}>
-                      <Text style={styles.textMoreInfo}>Ver más información</Text>
+                      <Text style={commonStyles.buttonText}>Ver más</Text>
                     </TouchableOpacity>
                   </View>
 

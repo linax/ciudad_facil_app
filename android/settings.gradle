@@ -13,3 +13,7 @@ include ':react-native-vector-icons'
 project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
 
 include ':app'
+include ':react-native-google-location'
+project(':react-native-google-location').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-google-location/android/app')
+include ':react-native-android-permissions'
+project(':react-native-android-permissions').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-permissions/android')

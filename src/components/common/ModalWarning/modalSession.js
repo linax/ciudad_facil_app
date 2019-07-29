@@ -47,7 +47,7 @@ export default class ModalSession extends Component  {
 
           <View>
             <TouchableOpacity style={styles.accept} onPress={() => this.close()}>
-              <Text style={{fontWeight: 'bold', color: '#999999'}}>Aceptar</Text>
+              <Text style={{fontWeight: 'bold', color: '#505050'}}>Aceptar</Text>
             </TouchableOpacity>
           </View>
       </Modal>

@@ -10,6 +10,7 @@ import { Actions } from 'react-native-router-flux';
 import HeaderFilter from '../../../components/common/HeaderFilter/headerFilter';
 import config from '../../../userDefaults.js';
 import styles from './styles';
+import commonStyles from '../../commonStyles';
 
 import ModalFilter from '../../../components/common/ModalFilter/modalFilter';
 import ModalFilterAccess from '../../../components/common/ModalFilter/modalFilterAccess';
@@ -65,7 +66,7 @@ class Search extends Component {
 	    var long = this.state.longitude;
 	    var anot = global.annotations;
 		var len = anot.length;
-		for (var i = 0; i < len; i++) {
+		for (var i = 0; i < len; i++) {console.log(lat+','+long)
 			anot[i].distance = this.getDistance(lat, long, anot[i].evp_lat, anot[i].evp_lon);
 			anot[i].distance = Math.round(anot[i].distance);
 		}
@@ -487,12 +488,12 @@ class Search extends Component {
 					<View style={{flexDirection: 'row', alignItems: 'center'}}>
 						<Image style={styles.image} source={{ uri: rowData.icon}} />
 						<View>
-							<Text style={styles.titleData}>{rowData.evp_nam}</Text>
-							<Text style={{paddingLeft: 10}}>{rowData.distance} Km</Text>
+							<Text style={[commonStyles.text, {paddingLeft:10}]}>{rowData.evp_nam}</Text>
+							<Text style={[commonStyles.text, {paddingLeft:10, fontSize: 14}]}>{rowData.distance} Km</Text>
 						</View>
 					</View>
 					<View style={styles.showContent}>
-						<Icon name="chevron-right" size={20} color="#B6B8B3" />
+						<Icon name="chevron-right" size={16} color="#707070" />
 					</View>
 				</View>
         <View style={styles.separatorLine} />
@@ -507,13 +508,13 @@ class Search extends Component {
 				<HeaderFilter title='Buscar lugares' filter={() => this._showSelectFilter()}/>
 
 				<View style={styles.containerInput}>
-					<Text style={{fontSize: 16, marginTop: 10, marginBottom: 10}}>Busca el lugar que necesitas</Text>
+					<Text style={commonStyles.text}>Busca el lugar que necesitas</Text>
 					<View style={styles.containerTextInput}>
 						<Icon name="search" size={25} color="#606060" />
 						<TextInput underlineColorAndroid='transparent' style={styles.input} onChangeText={(value) => this._didTapSearchPlace(value)}></TextInput>
 					</View>
 					<TouchableOpacity style={styles.add} onPress={() => this.setByDistance()}>
-							<Text style={styles.textDistance}>Ordenar por distancia</Text>
+							<Text style={commonStyles.buttonText}>Ordenar por distancia</Text>
 					</TouchableOpacity>
 				</View>
 

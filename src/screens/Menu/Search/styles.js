@@ -58,12 +58,7 @@ var styles = StyleSheet.create({
 	    padding: 10,
 	    margin:10
   	},
-  	textDistance: {
-    	fontWeight: 'bold',
-    	color: '#FFFFFF'
-  	},
   	showContent: {
-  		//height: 70,
   		width: 30,
   		justifyContent: 'center',
   		alignItems: 'flex-end',

@@ -12,6 +12,7 @@ import ModalWarning from '../../components/common/ModalWarning/modalWarning';
 import ModalReload from '../../components/common/ModalReload/modalReload';
 import Header from '../../components/common/Header/header';
 import styles from './styles';
+import commonStyles from '../commonStyles';
 import SIStyles from './selectImageStyles.js';
 import API from '../../API/ApiComm';
 import userDefaults from '../../userDefaults.js';
@@ -43,8 +44,8 @@ export default class EvalDetail extends Component {
   _setValue(value, index) {
     var realIndex = Math.floor(index)
     var newUpdate = this.state.update.slice(0)
-    newUpdate[realIndex] = value 
-    
+    newUpdate[realIndex] = value
+
     this.setState({
       update: newUpdate
     })
@@ -121,7 +122,7 @@ export default class EvalDetail extends Component {
     return this.evaluations.map((data, i) => {
       return(
         <View key={i}>
-          <Text key={i} style={[styles.title, {marginTop: 20}]}>{data.title}</Text>
+          <Text key={i} style={[commonStyles.text, {fontWeight:'bold' ,marginTop: 10}]}>{data.title}</Text>
           { this.renderAlternatives(data.opts, i) }
         </View>
       )
@@ -138,12 +139,12 @@ export default class EvalDetail extends Component {
                 index={i}
                 buttonSize={17}
                 buttonInnerColor={(opts[i].vie_id == this.state.update[index]) ? '#7F7F7F' : '#FFFFFF'}
-                buttonOuterColor={'#7F7F7F'}
+                buttonOuterColor={'#505050'}
                 isSelected={true}
                 onPress={() => this._setValue(data.vie_id, index)}
               />
               <View style={styles.labelContainer}>
-                <Text style={styles.labelFormar}>{data.vie_dsc}</Text>
+                <Text style={commonStyles.text}>{data.vie_dsc}</Text>
               </View>
             </RadioButton>
           </RadioForm>
@@ -200,7 +201,7 @@ export default class EvalDetail extends Component {
 
           <View style={[SIStyles.container, {marginTop: 20}]}>
             <View style={SIStyles.formGroup2}>
-                  <Text style={{color: '#979797', fontWeight: '700', marginBottom: 10}}>Descripción del lugar:</Text>
+                  <Text style={[commonStyles.text, {fontWeight: 'bold', marginBottom: 10}]}>Descripción del lugar:</Text>
                   <View style={SIStyles.contentInput}>
                     <TextInput underlineColorAndroid='transparent' style={SIStyles.textArea} multiline={true} maxLength={150}  onChangeText={(val) => options.eup_cmn = val}></TextInput>
                   </View>

@@ -7,6 +7,7 @@ import Modal from 'react-native-simple-modal';
 import Header from '../../../components/common/Header/header';
 
 import styles from './styles';
+import commonStyles from '../../commonStyles';
 
 class Help extends Component {
 
@@ -45,10 +46,10 @@ class Help extends Component {
 				<Header title='Ayuda'/>
 				<ScrollView>
 					<View style={styles.simbology}>
-						<Text style={styles.content}>Presione sobre los iconos para saber su significado:</Text>
+						<Text style={[commonStyles.text, styles.content]}>Presione sobre los iconos para saber su significado:</Text>
 						<View style={styles.firstRowIcons}>
 							<TouchableOpacity onPress={() => this._showMeaning('build')}><Image source={{ uri: 'build_1'}} style={styles.icon}/></TouchableOpacity>
-							<TouchableOpacity onPress={() => this._showMeaning('car')}><Image source={{ uri: 'car_2'}} style={styles.icon}/></TouchableOpacity>
+							<TouchableOpacity onPress={() => this._showMeaning('car')}><Image source={{ uri: 'car_blue'}} style={styles.icon}/></TouchableOpacity>
 							<TouchableOpacity onPress={() => this._showMeaning('corner')}><Image source={{ uri: 'corner_0'}} style={styles.icon}/></TouchableOpacity>
 							<TouchableOpacity onPress={() => this._showMeaning('public_area')}><Image source={{ uri: 'public_2'}} style={styles.icon}/></TouchableOpacity>
 						</View>
@@ -57,20 +58,20 @@ class Help extends Component {
 					</View>
 
 					<View style={styles.addInfo}>
-						<Text style={styles.title}>¿Cómo agregar marcadores?</Text>
-						<Text style={styles.content}>Para agregar un nuevo marcador debe presionar por dos 
+						<Text style={[commonStyles.text, styles.title]}>¿Cómo agregar marcadores?</Text>
+						<Text style={[commonStyles.text, styles.content]}>Para agregar un nuevo marcador debe presionar por dos
 						segundos el mapa en la posición donde desee agregar el nuevo marcador.</Text>
 					</View>
 
 					<View style={styles.editInfo}>
-						<Text style={styles.title}>¿Cómo eliminar o editar marcadores?</Text>
-						<Text style={styles.content}>Sólo se pueden eliminar o editar marcadores que haya ingresado uno mismo.
+						<Text style={[commonStyles.text, styles.title]}>¿Cómo eliminar o editar marcadores?</Text>
+						<Text style={[commonStyles.text, styles.content]}>Sólo se pueden eliminar o editar marcadores que haya ingresado uno mismo.
 						Para ellos, dirígete a la vista donde se despliega la información del marcador, y elige la opción eliminar
 						o editar del menú superior izquierdo.</Text>
-						<Text style={[styles.content, {marginBottom: 10, marginTop: 10}]}>A la información del marcador se puede ingresar de diferentes maneras</Text>
-						<Text style={[styles.content, {marginBottom: 10}]}>- Presionando sobre un marcador en el mapa.</Text>
-						<Text style={[styles.content, {marginBottom: 10}]}>- En la lista de lugares de interés.</Text>
-						<Text style={[styles.content, {marginBottom: 10}]}>- En las listas de tu perfil.</Text>
+						<Text style={[commonStyles.text, styles.content, {marginBottom: 10, marginTop: 10}]}>A la información del marcador se puede ingresar de diferentes maneras</Text>
+						<Text style={[commonStyles.text, styles.content, {marginBottom: 10}]}>- Presionando sobre un marcador en el mapa.</Text>
+						<Text style={[commonStyles.text, styles.content, {marginBottom: 10}]}>- En la lista de lugares de interés.</Text>
+						<Text style={[commonStyles.text, styles.content, {marginBottom: 10}]}>- En las listas de tu perfil.</Text>
 					</View>
 				</ScrollView>
 

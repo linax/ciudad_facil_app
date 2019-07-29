@@ -19,12 +19,6 @@ var styles = StyleSheet.create({
   viewContainer: {
     flexDirection: 'row'
   },
-  text: {
-    color: '#FFFFFF',
-    fontWeight: 'bold',
-    alignSelf: 'center',
-    marginRight: 4
-  },
   img: {
     width: 20,
     height: 20

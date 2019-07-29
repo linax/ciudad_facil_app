@@ -12,11 +12,12 @@ var styles = StyleSheet.create({
 		height: height *0.9
 	},
 	contentContainer: {
-		marginTop: 20,
+		padding: 20
+		/*marginTop: 20,
 		marginLeft: width*0.1,
 		marginRight: width*0.1,
 		flexDirection: 'row',
-		marginBottom: 10
+		marginBottom: 10*/
 	},
 	commentContainer: {
 		marginLeft: width*0.1,
@@ -51,13 +52,13 @@ var styles = StyleSheet.create({
 		color: '#FFF',
 		fontWeight: 'bold'
 	},
-	buttonShow: {
+	/*buttonShow: {
 		width: width * 0.6725,
 		height: height* 0.0725,
 		backgroundColor: '#3CC882',
 		alignItems: 'center',
 		justifyContent: 'center'
-	}
+	}*/
 });
 
 module.exports = styles;

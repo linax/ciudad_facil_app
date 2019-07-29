@@ -14,25 +14,20 @@ var stylesCAT = StyleSheet.create({
     justifyContent: 'space-between'
   },
   picker: {
-    paddingTop: 0,
-    paddingBottom: 0,
-    fontSize: 15,
-    color:'#808080',
-    marginTop: 5,
-    backgroundColor: '#fff',
-    marginLeft: 20,
+    fontSize: 14,
+    color:'#505050',
+    //marginTop: 5,
+    //backgroundColor: '#fff',
+    //marginLeft: 0,
     height: 30,
-    borderColor: 'gray',
+    borderColor: '#505050',
     borderWidth: 1,
-    width: width*0.35,
-    borderRadius: 10,
+    width: width * 0.34,
+    borderRadius: 5,
     textAlign: 'center',
   },
   textForm: {
-    fontWeight: '600',
-    fontSize: 15,
-    color: '#808080',
-    width: width*0.25
+    width: width * 0.3
   },
   modalRewrite: {
     width: width * 0.7

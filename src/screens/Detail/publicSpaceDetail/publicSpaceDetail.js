@@ -12,6 +12,7 @@ import ModalWarning from '../../../components/common/ModalWarning/modalWarning';
 import ModalSession from '../../../components/common/ModalWarning/modalSession';
 import API from '../../../API/ApiComm';
 import styles from './styles';
+import commonStyles from '../../commonStyles'
 import userDefaults from '../../../userDefaults.js';
 import NavigationBarDetail from '../../../components/common/NavigationBarDetail/navigationBarDetail';
 
@@ -159,25 +160,25 @@ export default class publicSpaceDetail extends Component {
 
   renderDetails() {
     return (
-      <View style={{padding: 20}}>
-          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20}}>
-            <Text style={{fontSize: 15}}>Creado por:</Text>
-            <Text>{this.state.creator}</Text>
+      <View style={styles.contentContainer}>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10}}>
+            <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Creado por:</Text>
+            <Text style={commonStyles.text}>{this.state.creator}</Text>
           </View>
 
-          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20}}>
-            <Text style={{fontSize: 15}}>Dirección:</Text>
-            <Text>{this.state.address}</Text>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10}}>
+            <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Dirección:</Text>
+            <Text style={commonStyles.text}>{this.state.address}</Text>
           </View>
 
-          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20}}>
-            <Text style={{fontSize: 15}}>Teléfono de contacto:</Text>
-            <Text>{this.state.phone}</Text>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10}}>
+            <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Teléfono de contacto:</Text>
+            <Text style={commonStyles.text}>{this.state.phone}</Text>
           </View>
 
-          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20}}>
-            <Text style={{fontSize: 15}}>Correo electrónico:</Text>
-            <Text>{this.state.email}</Text>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10}}>
+            <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Correo electrónico:</Text>
+            <Text style={commonStyles.text}>{this.state.email}</Text>
           </View>
 
         </View>
@@ -186,26 +187,31 @@ export default class publicSpaceDetail extends Component {
 
   renderAccesibility() {
     return (
-      <View style={{padding: 20}}>
+      <View style={styles.contentContainer}>
 
-          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20}}>
-            <Text style={{fontSize: 15}}>Acceso:</Text>
-            <Text>{this._getValueForNumber(this.state.accesibilityValue)}</Text>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10}}>
+            <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Acceso:</Text>
+            <Text style={commonStyles.text}>{this._getValueForNumber(this.state.accesibilityValue, 0)}</Text>
           </View>
 
-          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20}}>
-            <Text style={{fontSize: 15}}>Circulación:</Text>
-            <Text>{this._getValueForNumber(this.state.movilityValue)}</Text>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10}}>
+            <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Circulación:</Text>
+            <Text style={commonStyles.text}>{this._getValueForNumber(this.state.movilityValue, 0)}</Text>
           </View>
 
-          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20}}>
-            <Text style={{fontSize: 15}}>Uso:</Text>
-            <Text>{this._getValueForNumber(this.state.usedValue)}</Text>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10}}>
+            <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Baño:</Text>
+            <Text style={commonStyles.text}>{this._getValueForNumber(this.state.bathValue, 1)}</Text>
           </View>
 
-          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20}}>
-            <Text style={{fontSize: 15}}>Información:</Text>
-            <Text>{this._getValueForNumber(this.state.informationValue)}</Text>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10}}>
+            <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Seguridad:</Text>
+            <Text style={commonStyles.text}>{this._getValueForNumber(this.state.safetyValue, 0)}</Text>
+          </View>
+
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10}}>
+            <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Información:</Text>
+            <Text style={commonStyles.text}>{this._getValueForNumber(this.state.informationValue, 0)}</Text>
           </View>
 
         </View>
@@ -217,9 +223,9 @@ export default class publicSpaceDetail extends Component {
     return (
       <View style={styles.container}>
         <SpinnerCustom visible={this.state.visible}/>
-        <Header title='Información de espacio público'/>
+        <Header title=/*Información de */'Espacio público'/>
         <ScrollView>
-        <View style={styles.contentContainer}>
+        {/*<View style={styles.contentContainer}>
           <View style={[styles.md1]}>
             <Image
             source={{uri: this.state.image}}
@@ -250,25 +256,55 @@ export default class publicSpaceDetail extends Component {
             <Text style={styles.textButton}>Eliminar</Text>
           </TouchableOpacity>
         </View>
-        }
+      }*/}
 
-        <View style={{height: 1, backgroundColor: "#64606C", marginTop: 20}}></View>
+      <Text style={[commonStyles.text, commonStyles.titleText, {marginTop: 10, alignSelf: 'center'}]}>{this.state.name}</Text>
+      <View style={styles.contentContainer}>
+        <Image
+        source={{uri: this.state.image}}
+        style={[commonStyles.image]}
+        resizeMode={'center'}
+        />
+      </View>
 
-          <View style={{alignItems: 'center', marginTop: 10}}>
-            <TouchableOpacity style={styles.buttonShow} onPress={() => this._seeComments()}>
-              <Text style={styles.textButton}>Ver votos y comentarios</Text>
-            </TouchableOpacity>
-          </View>
+      <View style={commonStyles.contentContainer}>
+        <Text style={[commonStyles.text, {fontWeight:'bold'}]}>Descripción:</Text>
+        <Text style={[commonStyles.text]}>{this.state.description}</Text>
+        <Text style={[commonStyles.text, {fontWeight:'bold'}]}>Categoría:</Text>
+        <Text style={[commonStyles.text]}>{this.state.category}, {this.state.subCategory}</Text>
+      </View>
 
-          <View style={{alignItems: 'center', marginTop: 10}}>
-            <TouchableOpacity style={styles.buttonShow} onPress={() => this._seeEvaluations()}>
-              <Text style={styles.textButton}>Ver evaluaciones realizadas</Text>
-            </TouchableOpacity>
-          </View>
+      { this.state.permissions_u &&
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity style={commonStyles.buttonActivity} onPress={() => Actions.AddBuild({ isEditing: true })}>
+            <Text style={commonStyles.buttonText}>Editar</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={commonStyles.buttonActivity} onPress={() => this._didTapDeleteBuild()}>
+            <Text style={commonStyles.buttonText}>Eliminar</Text>
+          </TouchableOpacity>
+        </View>
+      }
 
-        <NavigationBarDetail selected1={this.state.isDetailSelected} selected2={!this.state.isDetailSelected} actionFirst={() => this.setState({ isDetailSelected: true })} actionSecond={() => this.setState({ isDetailSelected: false })}/>
-        { this.state.isDetailSelected && this.renderDetails() }
-        { !this.state.isDetailSelected && this.renderAccesibility() }
+        <View style={{height: 1, backgroundColor: "#505050"}}></View>
+
+        <View style={{ marginTop: 10, flexDirection:'row', alignSelf: 'center'}}>
+          <TouchableOpacity style={commonStyles.buttonShow} onPress={() => this._seeComments()}>
+            <Text style={commonStyles.buttonText}>Votos y comentarios</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={commonStyles.buttonShow} onPress={() => this._seeEvaluations()}>
+            <Text style={commonStyles.buttonText}>Evaluaciones</Text>
+          </TouchableOpacity>
+        </View>
+
+        <NavigationBarDetail
+          selected1={!this.state.isDetailSelected}
+          selected2={this.state.isDetailSelected}
+          actionFirst={() => this.setState({ isDetailSelected: false })}
+          actionSecond={() => this.setState({ isDetailSelected: true })}
+        />
+
+        { !this.state.isDetailSelected && this.renderDetails() }
+        { this.state.isDetailSelected && this.renderAccesibility() }
 
         </ScrollView>
       <ModalAfterDelete ref={(afterDelete) => { this.afterDelete = afterDelete; }}  icon="alert-circle" title="Aviso" background="#3CC882" text="La espacio público ha sido eliminada" action={() => Actions.pop({ refresh: { refreshAnnotations: true } }) }/>

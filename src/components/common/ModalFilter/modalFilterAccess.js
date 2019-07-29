@@ -10,6 +10,7 @@ import { Actions } from 'react-native-router-flux';
 import userDefaults from '../../../userDefaults.js';
 
 import styles from './styles';
+import commonStyles from '../../../screens/commonStyles';
 
 var radio_props = [
   {label: 'Buena', value: 2 },
@@ -57,7 +58,7 @@ export default class ModalSelectFilter extends Component  {
                   <RadioForm
                     radio_props={radio_props}
                     onPress={(value) => {this.setState({value: value})}}
-                    buttonColor={'#7F7F7F'}
+                    buttonColor={'#505050'}
                     animation={false}
                     buttonSize={15}
                   />
@@ -65,7 +66,7 @@ export default class ModalSelectFilter extends Component  {
 
           <View>
             <TouchableOpacity style={styles.accept} onPress={() => this.didTapClose()}>
-              <Text style={{fontWeight: 'bold', color: '#999999'}}>Filtrar</Text>
+              <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Filtrar</Text>
             </TouchableOpacity>
           </View>
       </Modal>

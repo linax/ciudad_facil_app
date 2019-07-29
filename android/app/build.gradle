@@ -84,14 +84,14 @@ def enableProguardInReleaseBuilds = false
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "25.0.0"
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.ciudadfacilapp"
+       applicationId "com.ciudadfacilapp"
         minSdkVersion 16
-        targetSdkVersion 24
-        versionCode 11
-        versionName "2.0"
+        targetSdkVersion 23
+        versionCode 15
+        versionName "2.01"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -106,10 +106,10 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file("cf-app-test.keystore")
-            storePassword "sergio"
+            storeFile file("ciudad-facil.keystore")
+            storePassword "secret"
             keyAlias "ciudad-facil"
-            keyPassword "sergio"
+            keyPassword "secret"
         }
     }
     buildTypes {
@@ -135,6 +135,8 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-google-location')
+    compile project(':react-native-android-permissions')
     compile project(':react-native-picker')
     compile project(':react-native-splash-screen')
     compile project(':react-native-image-picker')

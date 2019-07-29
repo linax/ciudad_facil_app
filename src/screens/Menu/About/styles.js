@@ -21,7 +21,7 @@ var styles = StyleSheet.create({
 		width: 150
 	},
 	image2:{
-		width: 40
+		width: 90
 	}
 });
 

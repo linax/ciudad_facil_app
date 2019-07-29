@@ -1,6 +1,6 @@
-Ciudad F醕il App
+Ciudad F路cil App
 
-*Siempre se debe utilizar la rama develop para testear la app, en ella se lleva el registro de avance de la aplicaci髇
+*Siempre se debe utilizar la rama develop para testear la app, en ella se lleva el registro de avance de la aplicaci贸n
 
 En primera instancia se debe instalar la linea de comandos de React Native(esto se debe hacer una vez):
 npm install -g react-native-cli
@@ -8,13 +8,37 @@ npm install -g react-native-cli
 Descargado el proyecto, se instalan los modulos de node asociados a este:
 npm install
 
-Arreglar los archivos de la librer韆 de mapbox en iOS como dice el siguiente post:
+Arreglar los archivos de la librer脤a de mapbox en iOS como dice el siguiente post:
+http://stackoverflow.com/questions/41939487/react-native-mapbox-gl-fails-to-link
+- npm install
+
+Arreglar los archivos de la librer铆a de mapbox en iOS como dice el siguiente post: 
+
 http://stackoverflow.com/questions/41939487/react-native-mapbox-gl-fails-to-link
 
 Para correr el proyecto:
 react-native run-android (o ios)
 
-** Para levantar la aplicaci髇 en android es necesario tener instalado el sdk, este link entrega mayor informaci髇 https://facebook.github.io/react-native/docs/getting-started.html (seleccionar android)
+** Para levantar la aplicaci脹n en android es necesario tener instalado el sdk, este link entrega mayor informaci脹n https://facebook.github.io/react-native/docs/getting-started.html (seleccionar android)
 ** Se debe agregar el archivo local.properties dentro de la carpeta android del proyecto, con la siguiente linea: sdk.dir = /Users/cokeina/Library/Android/sdk (ejemplo)
+- react-native run-android (o ios)
+
+## Estructura de directorio
+
+/src
+	/API
+		ApiComm.js -> Clase con llamadas a la api ciudad-f路cil
+	/components
+		/common
+		appNavigator.js
+	/images
+	/screens
+	app.js
+	userDefaults.js
 
 
+
+**Para levantar la aplicaci贸n en android es necesario tener instalado el sdk, este link entrega mayor informaci贸n https://facebook.github.io/react-native/docs/getting-started.html (seleccionar android)
+
+** Se debe agregar el archivo local.properties dentro de la carpeta android del proyecto, con la siguiente linea: 
+sdk.dir = /Users/cokeina/Library/Android/sdk (ejemplo)

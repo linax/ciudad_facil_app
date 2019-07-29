@@ -11,7 +11,7 @@ const MenuItem = (props) => {
 
 	return (
 		<TouchableOpacity style={styles.container} onPress={props.action}>
-			<Text style={{fontSize: 16, color: '#FFFFFF', fontWeight: 'bold'}}><Icon name={props.icon} size={20} style={styles.button} /> {props.title}</Text>
+			<Text style={{fontSize: 18, color: '#FFFFFF', fontWeight: 'bold'}}><Icon name={props.icon} size={20} style={styles.button} /> {props.title}</Text>
 		</TouchableOpacity>
 	);
 };

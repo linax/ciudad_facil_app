@@ -27,7 +27,7 @@ export default class Modal extends Component  {
 		    modalStyle={styles.modalStyle}
 		    >
 		    <View style={styles.textContainer}>
-		    <Text style={styles.text}>{props.text}</Text>
+		     <Text style={styles.text}>{props.text}</Text>
 		    </View>
 
 		    <View>

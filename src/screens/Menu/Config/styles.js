@@ -56,8 +56,6 @@ var styles = StyleSheet.create({
 	},
 	textConfig: {
 		fontWeight: '500',
-		fontSize: 15,
-		color: '#7F7F7F',
 		width: width * 0.6
 	},
   	text: {
@@ -82,7 +80,7 @@ var styles = StyleSheet.create({
     	paddingTop: 0,
     	paddingBottom: 0,
     	fontSize: 15,
-    	color:'#808080',
+    	color:'#505050',
     	marginTop: 5,
     	backgroundColor: '#fff',
     	marginLeft: 20,

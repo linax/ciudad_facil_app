@@ -67,7 +67,7 @@ var styles = StyleSheet.create({
 	text: {
 		fontSize: 17,
 		fontWeight: '500',
-		color: '#7F7C7C',
+		color: '#7C7C7C',
 		textAlign: 'center'
 	}
 });

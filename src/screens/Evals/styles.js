@@ -82,7 +82,7 @@ var styles = StyleSheet.create({
   		alignItems: 'flex-end',
   	},
   	containerComment: {
-  		
+  		width: 0.8 * width,
   	},
   	separatorLine: {
   		backgroundColor: '#b8b9ba',

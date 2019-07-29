@@ -13,12 +13,12 @@ var styles2 = StyleSheet.create({
 	header: {
 		alignItems: 'center'
 	},
-	image: {
+	/*image: {
 		width: width * 0.4,
-		height: height* 0.2,
+		height: height * 0.2,
 		marginTop: 20,
 		marginBottom: 10
-	},
+	},*/
 	evals: {
 		marginTop: 20,
 		width: 0.8 * width,

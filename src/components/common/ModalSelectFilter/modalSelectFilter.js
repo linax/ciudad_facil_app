@@ -10,6 +10,7 @@ import { Actions } from 'react-native-router-flux';
 import userDefaults from '../../../userDefaults.js';
 
 import styles from './styles';
+import commonStyles from '../../../screens/commonStyles';
 
 var radio_props = [
   {label: 'Tipo', value: 0 },
@@ -61,21 +62,21 @@ export default class ModalSelectFilter extends Component  {
                   <RadioForm
                     radio_props={radio_props}
                     onPress={(value) => {this.setState({value: value})}}
-                    buttonColor={'#7F7F7F'}
+                    buttonColor={'#505050'}
                     animation={false}
-                    buttonSize={13}
+                    buttonSize={15}
                   />
                 </View>
 
           <View>
             <TouchableOpacity style={[styles.accept, {marginBottom: 5}]} onPress={() => this.didTapClose()}>
-              <Text style={{fontWeight: 'bold', color: '#999999'}}>Filtrar</Text>
+              <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>Filtrar</Text>
             </TouchableOpacity>
           </View>
           { global.showClose &&
           <View>
             <TouchableOpacity style={[styles.accept, {marginBottom: 10}]} onPress={() => this.didTapCloseFilter()}>
-              <Text style={{fontWeight: 'bold', color: '#999999'}}><Icon name="close" size={18} color="#999999"/> Quitar filtro</Text>
+              <Text style={[commonStyles.text, {fontWeight: 'bold'}]}>{/*<Icon name="close" size={18} color="#505050"/>*/} Quitar filtro</Text>
             </TouchableOpacity>
           </View>
           }

@@ -10,6 +10,7 @@ import ModalWarning from '../../components/common/ModalWarning/modalWarning';
 import ModalReload from '../../components/common/ModalReload/modalReload';
 import Header from '../../components/common/Header/header';
 import styles from './styles';
+import commonStyles from '../commonStyles';
 import API from '../../API/ApiComm';
 import userDefaults from '../../userDefaults.js';
 
@@ -190,7 +191,7 @@ export default class Evals extends Component {
 		}
 		else {
 			this._didTapEditEvaluation()
-		}	
+		}
 	}
 
 	_didTapEditEvaluation() {
@@ -219,10 +220,10 @@ export default class Evals extends Component {
 				<View style={styles.containerEval}>
 					<View style={styles.dataContainer}>
 						<View style={styles.containerComment}>
-							<Text style={{fontStyle: 'italic', marginBottom: 10}}>{rowData.eup_cmn}</Text>
+							<Text style={[commonStyles.text, {fontStyle: 'italic', marginBottom: 10}]}>{rowData.eup_cmn}</Text>
 						</View>
 						<View>
-							<Text style={{fontWeight: 'bold', fontSize: 13, marginBottom: 10}}>{rowData.usr_evl} · <Text style={{fontSize: 13, fontWeight: '200'}}>{date}</Text></Text>
+							<Text style={[commonStyles.text, {fontWeight: 'bold', fontSize: 14, marginBottom: 10}]}>{rowData.usr_evl} · <Text style={{fontSize: 13, fontWeight: '200'}}>{date}</Text></Text>
 						</View>
 					</View>
 					<View style={styles.showContent}>
@@ -239,20 +240,20 @@ export default class Evals extends Component {
     	return (
       	<View style={styles.container}>
       		<SpinnerCustom visible={this.state.visible}/>
-        	<Header title='Evaluaciones realizadas' popParams={{ refresh: { refreshData: true }}}/>
+        	<Header title='Evaluaciones' /*realizadas'*/ popParams={{ refresh: { refreshData: true }}}/>
 
         	<View style={styles.titleContainer}>
-        		<Text style={{fontWeight: 'bold', fontSize: 18}}>{this.state.title}</Text>
+						<Text style={[commonStyles.text, commonStyles.titleText]}>{this.state.title}</Text>
         	</View>
 
         	<View style={styles.containerButton}>
 	        	<TouchableOpacity style={styles.buttonShow} onPress={() => this._didTapMakeEvaluation()}>
-	        		<Text style={{fontWeight: 'bold', color: '#FFFFFF'}}>{buttonTitle}</Text>
+	        		<Text style={commonStyles.buttonText}>{buttonTitle}</Text>
 				</TouchableOpacity>
         	</View>
 
         	<ScrollView style={styles.comments}>
-        		<Text style={{fontWeight: 'bold', fontSize: 16, marginLeft: 20}}>Evaluaciones: </Text>
+        		{/*<Text style={{fontWeight: 'bold', fontSize: 16, marginLeft: 20}}>Evaluaciones: </Text>*/}
         		<View style={styles.separatorLine} />
 
         		<ListView enableEmptySections={true} dataSource={this.state.dataSource} renderRow={this._renderCell.bind(this)}/>

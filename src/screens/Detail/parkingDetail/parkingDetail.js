@@ -134,7 +134,7 @@ export default class ParkingDetail extends Component {
     return (
       <View style={styles.container}>
         <SpinnerCustom visible={this.state.visible}/>
-        <Header title='Información del estacionamiento'/>
+        <Header title=/*Información del*/'Estacionamiento'/>
         <ScrollView>
         <View style={styles.contentContainer}>
           <View style={[styles.md1]}>

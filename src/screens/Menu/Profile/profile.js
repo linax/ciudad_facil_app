@@ -14,6 +14,7 @@ import ImageHelper from '../../../components/common/Helpers/ImageHelper';
 import AsyncStorageHelper from '../../../components/common/Helpers/AsyncStorageHelper';
 
 import styles from './styles';
+import commonStyles from '../../commonStyles.js'
 
 import API from '../../../API/ApiComm';
 
@@ -115,6 +116,7 @@ class Profile extends Component {
 
 				<ScrollView>
 					<View style={styles.profile}>
+						<Text style={[commonStyles.text, commonStyles.titleText]}>{this.state.username}</Text>
 						<TouchableOpacity style={styles.avatar} onPress={() => this.selectPhotoTapped()}>
 							<Image source={{uri: this.state.image}} style={styles.avatar}>
 								<View style={styles.changePhoto}>
@@ -122,15 +124,14 @@ class Profile extends Component {
 								</View>
 							</Image>
 						</TouchableOpacity>
-						<Text style={{fontWeight: 'bold', color: '#606060', marginBottom: 5}}>{this.state.username}</Text>
-						<Text style={{color: '#606060', marginBottom: 5}}>{this.state.name} {this.state.apl}</Text>
-						<Text style={{ color: '#A2A2A2' }}>{this.state.email}</Text>
+						<Text style={commonStyles.text}>{this.state.name} {this.state.apl}</Text>
+						<Text style={commonStyles.text}>{this.state.email}</Text>
 
 						<TouchableOpacity style={styles.editProfile} onPress={() => Actions.EditProfile()}>
-							<Text style={styles.textEdit}>Editar perfil</Text>
+							<Text style={commonStyles.buttonText}>Editar perfil</Text>
 						</TouchableOpacity>
 
-						<Text style={styles.title}>Ver evaluaciones realizadas:</Text>
+						<Text style={[commonStyles.text]}>Evaluaciones realizadas:</Text>
 
 						<EvaluateButton imgName={require('../../../images/profile/building.png')}  title="Edificaciones" type="2"/>
 						<EvaluateButton imgName={require('../../../images/profile/public-space.png')} title="Espacio público" type="3"/>

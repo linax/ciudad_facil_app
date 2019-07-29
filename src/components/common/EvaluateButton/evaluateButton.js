@@ -7,6 +7,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { Actions } from 'react-native-router-flux';
 
 import styles from './styles.js';
+import commonStyles from '../../../screens/commonStyles';
 import userDefaults from '../../../userDefaults.js';
 
 export default class EvaluateButton extends Component {
@@ -26,7 +27,7 @@ export default class EvaluateButton extends Component {
 	        <TouchableHighlight style={styles.container} onPress={() => this._getDetail()}>
 				<View style={styles.viewContainer}>
 				<Image source={this.props.imgName} style={styles.img} />
-	          	<Text style={styles.text}> {this.props.title}</Text>
+	          	<Text style={commonStyles.buttonText}> {this.props.title}</Text>
 				</View>
 	      </TouchableHighlight>
 	  );
